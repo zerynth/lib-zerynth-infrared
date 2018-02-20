@@ -1,9 +1,9 @@
 """
 .. module:: infrared
 
-****************
-InfraRed Library
-****************
+*****************
+Infra Red Library
+*****************
 
 Infra Red Capture, Send and Decode module
 
@@ -188,7 +188,7 @@ class IRReceiver():
         """
         .. method:: decode(data)
 
-            Analyze the raw captured data identifying the protocol.
+            Analyzes the raw captured data identifying the protocol.
 
             If the protocol is recognized data are decoded and an IRPacket returned.
             Otherwise an IRPacket with packet_type "UNKNOWN" is returned
@@ -212,7 +212,7 @@ class IRReceiver():
         """
         .. method:: capture(max_samples=100,time_window=200,wait=0)
 
-            Start the IR capture activating the ICU on the receiver pin.
+            Starts the IR capture activating the ICU on the receiver pin.
 
         
             * max_samples: it sets the number of samples to be collected before terminate the capture. Default is set to 100 that works for most of the used IR protocols.
@@ -234,7 +234,7 @@ class IRReceiver():
         """
         .. method:: captureAndDecode(max_samples=100,time_window=200,wait=0)
 
-            Start the IR capture activating the ICU on the receiver pin and pass the captured raw signal to the decode method returning an IRPacket
+            Starts the IR capture activating the ICU on the receiver pin and pass the captured raw signal to the decode method returning an IRPacket
             
             * max_samples: it sets the number of samples to be collected before terminate the capture. Default is set to 100 that works for most of the used IR protocols.
             * time_window: it sets the max amount in milliseconds of the capture window. Default is set to 200 milliseconds that works for most of the used IR protocols. 
@@ -280,7 +280,7 @@ class IRSender():
         """
         .. method:: sendRaw(data)
 
-            Send raw data by taking as input a list of pulses duration in microseconds. The first represents the duration of IR firing phase (state 1) while the the second is the IR LED  OFF phase (state 0) and so on.
+            Sends raw data by taking as input a list of pulses duration in microseconds. The first represents the duration of IR firing phase (state 1) while the the second is the IR LED  OFF phase (state 0) and so on.
        
         """
     
@@ -300,7 +300,7 @@ class IRSender():
         """
         .. method:: send(IRPacket)
 
-            Send the IR message contained in the passed IRPacket. If IRPacket packet_type is UNKNOWN data are sent as raw data.
+            Sends the IR message contained in the passed IRPacket. If IRPacket packet_type is UNKNOWN data are sent as raw data.
        
         """        
     
