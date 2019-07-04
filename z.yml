@@ -1,0 +1,12 @@
+---
+description: Infrared send/receive functionalities
+fullname: lib.zerynth.infrared
+info:
+    chip_manufacturer: '-'
+    chip_name: '-'
+    name: Zerynth Infrared Library
+    type: Protocol
+keywords:
+- infrared
+title: Infrared Library
+...
